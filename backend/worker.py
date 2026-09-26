@@ -32,7 +32,8 @@ def ensure():
                 verdict text NOT NULL DEFAULT '',
                 reason text NOT NULL DEFAULT '',
                 created_by text NOT NULL,
-                created_at timestamptz NOT NULL
+                created_at timestamptz NOT NULL,
+                rinse_token_id integer
             )"""
         )
         conn.commit()
